@@ -55,33 +55,9 @@ const char *words[] = {
     "instrumente", "scule", "unelte", "echipamente", "instalații", "sisteme", "rețele", "circuite", "plăci de circuit", "microcipuri",
     "transistoare", "rezistoare", "condensatoare", "inductoare", "diode", "triode", "pentode", "tetrode", "tiristoare", "varistoare",
     "potențiometre", "relee", "comutatoare", "întrerupătoare", "prize", "ștecăr", "mufe", "conectori", "cablu", "fir",
-    "antene", "paratrăsnete", "izolații", "conductori", "semiconductori", "superconductori", "izolanți", "dieletric", "feromagnetic", "paramagnetic",
-    "diamagnetic", "antiferromagnetic", "ferrimagnetic", "piezoelectric", "piroelectric", "electrostrictiv", "magnetostrictiv", "termoelectric", "fotoelectric", "electroluminiscent",
-    "fotoluminiscent", "cathodoluminiscent", "chemiluminiscent", "bioluminescent", "radioluminescent", "triboluminescent", "sonoluminescent", "mechanoluminescent", "triboelectric", "piezoelectric",
-    "electrokinetic", "elektroosmotic", "electroforetic", "dielectric", "capacitive", "inductive", "resistive", "ohmic", "non-ohmic", "superconducting",
-    "semiconducting", "insulating", "conducting", "metallic", "ionic", "covalent", "molecular", "atomic", "nuclear", "subatomic",
-    "quarks", "leptoni", "bosoni", "fermioni", "neutroni", "protoni", "electroni", "neutrino", "muoni", "tauoni",
-    "pioni", "kaoni", "lambda", "sigma", "xi", "omega", "delta", "rho", "phi", "eta",
-    "theta", "iota", "kappa", "lambda", "mu", "nu", "xi", "omicron", "pi", "rho",
-    "sigma", "tau", "upsilon", "phi", "chi", "psi", "omega", "alpha", "beta", "gamma",
-    "delta", "epsilon", "zeta", "eta", "theta", "iota", "kappa", "lambda", "mu", "nu",
-    "xi", "omicron", "pi", "rho", "sigma", "tau", "upsilon", "phi", "chi", "psi",
-    "omega", "alef", "bet", "gimel", "dalet", "he", "vav", "zayin", "het", "tet",
-    "yod", "kaf", "lamed", "mem", "nun", "samekh", "ayin", "pe", "tsadi", "qof",
-    "resh", "shin", "tav", "aleph", "beth", "gimel", "daleth", "heth", "waw", "zayin",
-    "heth", "teth", "yodh", "kaph", "lamedh", "mem", "nun", "samekh", "ayin", "pe",
-    "tsade", "qoph", "resh", "shin", "tav", "a", "b", "c", "d", "e",
-    "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
-    "p", "q", "r", "s", "t", "u", "v", "w", "x", "y",
-    "z", "aa", "bb", "cc", "dd", "ee", "ff", "gg", "hh", "ii",
-    "jj", "kk", "ll", "mm", "nn", "oo", "pp", "qq", "rr", "ss",
-    "tt", "uu", "vv", "ww", "xx", "yy", "zz", "aaa", "bbb", "ccc",
-    "ddd", "eee", "fff", "ggg", "hhh", "iii", "jjj", "kkk", "lll", "mmm",
-    "nnn", "ooo", "ppp", "qqq", "rrr", "sss", "ttt", "uuu", "vvv", "www",
-    "xxx", "yyy", "zzz", "aaaa", "bbbb", "cccc", "dddd", "eeee", "ffff", "gggg",
-    "hhhh", "iiii", "jjjj", "kkkk", "llll", "mmmm", "nnnn", "oooo", "pppp", "qqqq",
-    "rrrr", "ssss", "tttt", "uuuu", "vvvv", "wwww", "xxxx", "yyyy", "zzzz"
+    "antene", "paratrăsnete", "izolații", "conductori", "semiconductori"
 };
+
 #define NUM_WORDS (sizeof(words) / sizeof(words[0]))
 
 // Function to choose a random word
