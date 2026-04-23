@@ -12,23 +12,23 @@ int main()
     int randomnumber = rand() % 100 + 1; 
     int attempt = 0, attemptuser = 0;
 
-    cout << "Guess the number (between 1 and 100)" << endl;
+    cout << "Ghiceste numarul (între 1 și 100)" << endl;
 
     do {
-        cout << "Enter your guess: ";
+        cout << "Ghicește: ";
         cin >> attemptuser;
         attempt++;
 
         if (attemptuser < randomnumber) {
-            cout << "Too low, try again" << endl;
+            cout << "Prea mic, mai încearcă" << endl;
         } 
         else if (attemptuser > randomnumber) {
-            cout << "Too high, try again" << endl;
+            cout << "Prea mare, mai încearcă" << endl;
         }
 
     } while (attemptuser != randomnumber);
 
-    cout << "Correct! Number of tries: " << attempt << endl;
+    cout << "Correct! Numărul de încercări: " << attempt << endl;
 
     return 0;
 }
