@@ -182,20 +182,20 @@ int main() {
     char guessedLetters[26] = {0}; // To track guessed letters
     int guessedCount = 0;
 
-    printf("Welcome to Hangman!\n");
-    printf("You have %d wrong guesses allowed.\n", MAX_WRONG_GUESSES);
+    printf("Bine ai venit la spanzuratoarea!\n");
+    printf("Ai doar %d raaspunsuri maxim.\n", MAX_WRONG_GUESSES);
 
     while (wrongGuesses < MAX_WRONG_GUESSES && !isWordGuessed(display, wordLength)) {
         displayHangman(wrongGuesses);
         displayWord(display);
-        printf("Guessed letters: ");
+        printf("Literele ghicite: ");
         for (int i = 0; i < guessedCount; i++) {
             printf("%c ", guessedLetters[i]);
         }
         printf("\n");
 
         char guess;
-        printf("Enter a letter: ");
+        printf("Litera: ");
         scanf(" %c", &guess);
         guess = tolower(guess);
 
@@ -208,7 +208,7 @@ int main() {
             }
         }
         if (alreadyGuessed) {
-            printf("You already guessed that letter!\n");
+            printf("Ai ghicit deja cuvantul!\n");
             continue;
         }
 
@@ -216,7 +216,7 @@ int main() {
 
         if (!checkLetter(word, display, guess, wordLength)) {
             wrongGuesses++;
-            printf("Wrong guess! %d wrong guesses left.\n", MAX_WRONG_GUESSES - wrongGuesses);
+            printf("Gresit! %d raspunsuri gresite mai ai.\n", MAX_WRONG_GUESSES - wrongGuesses);
         } else {
             printf("Good guess!\n");
         }
@@ -226,9 +226,9 @@ int main() {
     displayWord(display);
 
     if (isWordGuessed(display, wordLength)) {
-        printf("Congratulations! You won! The word was: %s\n", word);
+        printf("Bravo! Cuvantul era : %s\n", word);
     } else {
-        printf("Sorry, you lost! The word was: %s\n", word);
+        printf("Ai pierdut! Cuvantul era: %s\n", word);
     }
 
     return 0;
