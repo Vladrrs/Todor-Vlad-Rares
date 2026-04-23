@@ -188,7 +188,7 @@ int main() {
     while (wrongGuesses < MAX_WRONG_GUESSES && !isWordGuessed(display, wordLength)) {
         displayHangman(wrongGuesses);
         displayWord(display);
-        printf("Literele ghicite: ");
+        printf("Literele incorecte : ");
         for (int i = 0; i < guessedCount; i++) {
             printf("%c ", guessedLetters[i]);
         }
@@ -216,7 +216,7 @@ int main() {
 
         if (!checkLetter(word, display, guess, wordLength)) {
             wrongGuesses++;
-            printf("Gresit! %d raspunsuri gresite mai ai.\n", MAX_WRONG_GUESSES - wrongGuesses);
+            printf("Gresit! Mai ai %d raspunsuri pe care le poti gresi .\n", MAX_WRONG_GUESSES - wrongGuesses);
         } else {
             printf("Good guess!\n");
         }
