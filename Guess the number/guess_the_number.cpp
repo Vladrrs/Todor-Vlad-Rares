@@ -12,7 +12,7 @@ int main()
     int randomnumber = rand() % 100 + 1; 
     int attempt = 0, attemptuser = 0;
 
-    cout << "Ghiceste numarul (între 1 și 100)" << endl;
+    cout << "Ghiceste numarul (intre 1 si 100)" << endl;
 
     do {
         cout << "Ghiceste: ";
